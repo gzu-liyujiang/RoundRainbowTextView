@@ -1,0 +1,2 @@
+# RoundRainbowTextView
+Android自定义TextView，带渐变色边框的彩虹字效果
