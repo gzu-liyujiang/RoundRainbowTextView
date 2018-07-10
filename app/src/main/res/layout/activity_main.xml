@@ -2,18 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <cn.qqtheme.roundrainbowtextview.RoundRainbowTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:paddingBottom="2dp"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:paddingTop="2dp"
-        android:text="彩虹字"
-        android:textSize="12sp" />
+    android:orientation="horizontal">
 
     <cn.qqtheme.roundrainbowtextview.RoundRainbowTextView
         android:id="@+id/custom"
@@ -25,6 +14,42 @@
         android:paddingRight="4dp"
         android:paddingTop="2dp"
         android:text="彩虹字"
+        android:textSize="12sp" />
+
+    <cn.qqtheme.roundrainbowtextview.RoundRainbowTextView
+        android:id="@+id/custom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="贵州"
+        android:textSize="12sp" />
+
+    <cn.qqtheme.roundrainbowtextview.RoundRainbowTextView
+        android:id="@+id/custom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="穿青人"
+        android:textSize="12sp" />
+
+    <cn.qqtheme.roundrainbowtextview.RoundRainbowTextView
+        android:id="@+id/custom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="山魈人马"
         android:textSize="12sp" />
 
 </LinearLayout>

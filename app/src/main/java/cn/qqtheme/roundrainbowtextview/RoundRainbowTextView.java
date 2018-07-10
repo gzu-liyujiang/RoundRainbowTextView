@@ -18,12 +18,12 @@ import android.util.AttributeSet;
  */
 public class RoundRainbowTextView extends android.support.v7.widget.AppCompatTextView {
     private static final int[] GRADIENT_COLORS = {0xFFE64433, 0xFFFDB628};
-    private static final int BORDER_WIDTH = 1;//dp
-    private static final int BORDER_RADIUS = 3;//dp
+    private static final float BORDER_WIDTH = 1f;//dp
+    private static final float BORDER_RADIUS = 3f;//dp
     private boolean drawBorder = true;
     private int[] borderColors = GRADIENT_COLORS;
-    private int borderWidth = BORDER_WIDTH;
-    private int borderRadius = BORDER_RADIUS;
+    private float borderWidth = BORDER_WIDTH;
+    private float borderRadius = BORDER_RADIUS;
     private int textWidth;
     private LinearGradient shader;
     private Rect rect;
@@ -41,11 +41,11 @@ public class RoundRainbowTextView extends android.support.v7.widget.AppCompatTex
         super(context, attrs, defStyleAttr);
     }
 
-    public void setBorder(int width, int radius) {
+    public void setBorder(float width, float radius) {
         setBorder(width, radius, GRADIENT_COLORS);
     }
 
-    public void setBorder(int width, int radius, int[] colors) {
+    public void setBorder(float width, float radius, int[] colors) {
         this.drawBorder = width > 0;
         this.borderWidth = width;
         this.borderRadius = radius;
@@ -87,15 +87,15 @@ public class RoundRainbowTextView extends android.support.v7.widget.AppCompatTex
             if (rectF == null) {
                 rectF = new RectF(rect);
             }
-            int radius = dip2Px(borderRadius);
+            float radius = dip2Px(borderRadius);
             canvas.drawRoundRect(rectF, radius, radius, paint);
             canvas.restore();
         }
     }
 
-    private int dip2Px(int dip) {
+    private float dip2Px(float dip) {
         float density = getResources().getDisplayMetrics().density;
-        return (int) (dip * density + .5f);
+        return dip * density + .5f;
     }
 
 }
